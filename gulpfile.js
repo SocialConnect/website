@@ -67,6 +67,7 @@ gulp.task('html-pages-min', function() {
 });
 
 var cssPath = [
+    './src/vendor/bootswatch-dist/css/bootstrap.css',
     './src/css/template.css'
 ];
 
