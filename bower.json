@@ -15,10 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.3.8",
-    "angular-route": "~1.3.8",
-    "angular-resource": "~1.3.8",
-    "bootstrap": "~3.3.1",
-    "bootswatch-dist": "~3.3.1+2-readable"
+    "bootstrap": "~3.3.7"
   }
 }

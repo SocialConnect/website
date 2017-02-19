@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialConnect/Auth - Social sign with PHP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/php.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <a class="navbar-brand" href="#">SocialConnect</a>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://github.com/ovr" target="_blank">@ovr</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="jumbotron starter-template">
+            <p>
+                <a href="https://packagist.org/packages/socialconnect/auth"><img src="https://camo.githubusercontent.com/55d5b45bf4e0cb3d5c433da977a09b8cec26084e/687474703a2f2f696d672e736869656c64732e696f2f7061636b61676973742f6c2f536f6369616c436f6e6e6563742f617574682e7376673f7374796c653d666c61742d737175617265" alt="License" data-canonical-src="http://img.shields.io/packagist/l/SocialConnect/auth.svg?style=flat-square" style="max-width:100%;"></a>
+                <a href="https://travis-ci.org/SocialConnect/auth"><img src="https://camo.githubusercontent.com/b069727b09380e661209b8b4b9ae9c04f87521f9/687474703a2f2f696d672e736869656c64732e696f2f7472617669732f536f6369616c436f6e6e6563742f617574682e7376673f7374796c653d666c61742d737175617265" alt="Build Status" data-canonical-src="http://img.shields.io/travis/SocialConnect/auth.svg?style=flat-square" style="max-width:100%;"></a>
+                <a href="https://coveralls.io/github/SocialConnect/auth?branch=master"><img src="https://camo.githubusercontent.com/498bf5fc880113cbc09d734dce31489a84d75513/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f536f6369616c436f6e6e6563742f617574682f62616467652e7376673f6272616e63683d6d617374657226736572766963653d676974687562" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/SocialConnect/auth/badge.svg?branch=master&amp;service=github" style="max-width:100%;"></a>
+                <a href="https://scrutinizer-ci.com/g/SocialConnect/auth/?branch=master"><img src="https://camo.githubusercontent.com/738f36c6b6324df0dc96e82560e8f68840749561/687474703a2f2f696d672e736869656c64732e696f2f7363727574696e697a65722f672f736f6369616c636f6e6e6563742f617574682f6d61737465722e7376673f7374796c653d666c61742d737175617265" alt="Scrutinizer Code Quality" data-canonical-src="http://img.shields.io/scrutinizer/g/socialconnect/auth/master.svg?style=flat-square" style="max-width:100%;"></a>
+                <a href="https://www.versioneye.com/user/projects/54d7935c2bc7901e48000014"><img src="https://camo.githubusercontent.com/7e6985b9761b5b616aa8133043ef9439a968d96d/68747470733a2f2f7777772e76657273696f6e6579652e636f6d2f757365722f70726f6a656374732f3534643739333563326263373930316534383030303031342f62616467652e7376673f7374796c653d666c6174" alt="Dependency Status" data-canonical-src="https://www.versioneye.com/user/projects/54d7935c2bc7901e48000014/badge.svg?style=flat" style="max-width:100%;"></a>
+            </p>
+            <h1>SocialConnect</h1>
+            <p class="lead">Easy way to connect your project to Social network(s).</p>
+            <p>Open source social sign PHP Library. The main goal is to create an abstraction api between your application and various social apis and identities providers such as Facebook, Twitter and Google.</p>
+            <div class="row">
+                <a class="btn btn-success btn-sm" href="http://github.com/socialconnect" target="_blank"><i class="fa fa-github"></i> Source code on Github</a>
+                <iframe src="http://ghbtns.com/github-btn.html?user=socialconnect&repo=auth&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px" style="vertical-align: bottom;"></iframe>
+            </div>
+        </div>
+
+        <div class="row panel">
+            <div class="col-md-3">
+                <h2>OAuth2</h2>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>GitHub</li>
+                    <li>Vk (ВКонтакте)</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>PayPal</li>
+                    <li>Google</li>
+                    <li>Slack</li>
+                    <li>BitBucket</li>
+                    <li>Twitch</li>
+                    <li>500px</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>OAuth1</h2>
+
+                <ul>
+                    <li>Twitter</li>
+                    <li>500px</li>
+                    <li>Tumblr</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>OpenId</h2>
+
+                <ul>
+                    <li>Steam</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>OpenIDConnect</h2>
+
+                <ul>
+                    <li>Google</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row panel">
+            <div class="col-md-3">
+                <h4>Pretty simple example</h4>
+                <h5>Connect to Google:</h5>
+            </div>
+            <div class="col-md-9">
+                <pre>
+                    <code class="php">
+$configuration = [
+    'redirectUri' => 'http://sconnect.local/auth/cb',
+    'provider' => [
+        'facebook' => [
+            'applicationId' => '',
+            'applicationSecret' => '',
+            'scope' => [
+                'email'
+            ]
+        ],
+    ]
+];
+
+$service = new \SocialConnect\Auth\Service(
+    new \SocialConnect\Common\Http\Client\Curl(),
+    new \SocialConnect\Provider\Session\Session(),
+    $configuration
+);
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <script>
+        function ready() {
+            hljs.initHighlightingOnLoad();
+        }
+
+        document.addEventListener('DOMContentLoaded', ready);
+    </script>
+</body>
+</html>
